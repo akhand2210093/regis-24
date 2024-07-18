@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'registration',
+    'django_recaptcha',
+    
 ]
 
 
@@ -53,6 +55,9 @@ REST_FRAMEWORK = {
     }
 }
 
+
+RECAPTCHA_PUBLIC_KEY = 'your_site_key'
+RECAPTCHA_PRIVATE_KEY = 'your_secret_key'
 
 
 # Email settings
