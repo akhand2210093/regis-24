@@ -76,3 +76,4 @@ whitenoise
 yarl
 dj_database_url
 psycopg2-binary
+python-decouple==3.8
