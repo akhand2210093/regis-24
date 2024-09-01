@@ -22,8 +22,7 @@ class StudentCreateView(generics.CreateAPIView):
         result = r.json()
 
         # Debugging output
-        print(result) # To see what response you're getting from Google
-
+        # print(result) # To see what response you're getting from Google
 
         if result['success']:
             return super().create(request, *args, **kwargs)
