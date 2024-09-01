@@ -20,6 +20,11 @@ class StudentCreateView(generics.CreateAPIView):
         }
         r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
         result = r.json()
+
+        # Debugging output
+        print(result)  # To see what response you're getting from Google
+        
+
         if result['success']:
             return super().create(request, *args, **kwargs)
         else:
