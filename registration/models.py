@@ -15,7 +15,6 @@ class Student(models.Model):
     email_id = models.EmailField(unique=True, validators=[validate_email])
     phone_no = models.CharField(max_length=15, unique=True)
     residence = models.CharField(max_length=30)
-    gender = models.CharField(max_length=30)
 
     def __str__(self):
         return self.email_id
