@@ -42,6 +42,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 ALLOWED_HOSTS = ["*"]
+STATIC_URL = 'static/'
+
 
 
 # Application definition
