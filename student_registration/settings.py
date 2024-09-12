@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config, Csv
-config = Config()
+from decouple import config
 
 
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-aks+de(u^!30_r!_6e*9s74pp0^x9z04l)joj40rkcfc&1#+ie')
